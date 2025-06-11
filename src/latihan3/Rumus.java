@@ -3,6 +3,10 @@ package latihan3;
 public class Rumus {
     //Muhammd Mahdi, 2310010345, 4D
     private double sisi,panjang,lebar,hasil;
+
+    Rumus() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
     public double getHasil(){
         return hasil;
@@ -16,11 +20,18 @@ public class Rumus {
         this.hasil = hasil;
     }
     
-    public double setLuasPersegi(){
-        return sisi * sisi;
+    public void hitungLuasPersegi(int sisiInput){
+        sisi = sisiInput;
+        hasil= sisi * sisi;
     }
     
-    public double setLuasPersegiPanjang(){
-        return panjang * lebar;
+    public void hitungLuasPersegiPanjang(int panjang, int lebar){
+        panjang = panjang;
+        lebar = lebar;
+        hasil = panjang * lebar;
+    }
+
+    void hitungLuasPersegiPanjang(int i) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }
